@@ -1,12 +1,12 @@
 ---
 declared-services:
-  my-stt-service:
+  Speech-to-text-watson:
     label: speech_to_text
     plan: standard
 applications:
-- name: speech-to-text-demo
+- name: speech-to-text-ayatokura
   path: .
   command: npm start
-  memory: 512M
+  memory: 256M
   services:
-  - my-stt-service
+  - Speech-to-text-watson
